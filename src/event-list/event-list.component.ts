@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventListComponent implements OnInit {
 
-  constructor() { }
+ 
+  @Output() eventSelected:EventEmitter<Event> = new EventEmitter()
+  events: Event[] = [
+    {
+      id:1,
+      title:'Wedding',
+      date:new Date(),
+      location: 'Miami, Florida',
+      description:'string'
+    },
+    // Add more sample events
+  ];
 
-  ngOnInit() {
+  selectEvent(event: Event): void {
+    this.eventSelected.emit(event);
   }
+
 
 }
