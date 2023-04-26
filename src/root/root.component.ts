@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { EventManager } from '@angular/platform-browser';
 import { EventDetailComponent } from 'src/event-detail/event-detail.component';
 import { EventListComponent } from 'src/event-list/event-list.component';
 
@@ -8,7 +7,7 @@ import { EventListComponent } from 'src/event-list/event-list.component';
   templateUrl: './root.component.html',
   styleUrls: ['./root.component.css'],
   standalone:true,
-  imports:[EventListComponent]
+  imports:[EventListComponent, EventDetailComponent]
 })
 export class RootComponent implements OnInit {
 
