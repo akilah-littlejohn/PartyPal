@@ -16,14 +16,15 @@ export class EventListComponent implements OnInit {
       title:'Wedding',
       date:new Date(),
       location: 'Miami, Florida',
-      description:'string'
+      description:'string',
+      guest: {
+        firstName:'Alex',
+        lastName:'Jones',
+        age:21,
+        drinkPackage:true
+      }
     },
-    guest: {
-      firstName:'Alex',
-      lastName:'Jones',
-      age:21,
-      drinkPackage:true
-    }
+   
   ];
 
   selectEvent(event: Event): void {
