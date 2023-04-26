@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { EventModel } from 'src/event.model';
 
 @Component({
   selector: 'app-event-list',
@@ -9,7 +10,7 @@ export class EventListComponent implements OnInit {
 
  
   @Output() eventSelected:EventEmitter<Event> = new EventEmitter()
-  events: Event[] = [
+  events: EventModel[] = [
     {
       id:1,
       title:'Wedding',
@@ -17,12 +18,17 @@ export class EventListComponent implements OnInit {
       location: 'Miami, Florida',
       description:'string'
     },
-    // Add more sample events
+    guest: {
+      firstName:'Alex',
+      lastName:'Jones',
+      age:21,
+      drinkPackage:true
+    }
   ];
 
   selectEvent(event: Event): void {
     this.eventSelected.emit(event);
   }
-
+ngOnInit(){}
 
 }

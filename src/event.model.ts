@@ -1,7 +1,7 @@
 import { GuardsCheckStart } from "@angular/router";
 import { Guest } from "./guest.model";
 
-export interface Event {
+export interface EventModel {
   id:number
   title:string,
   location:string,
