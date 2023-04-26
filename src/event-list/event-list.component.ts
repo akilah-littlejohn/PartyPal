@@ -18,8 +18,21 @@ export class EventListComponent implements OnInit {
       location: 'Miami, Florida',
       description:'string',
       guest: {
-        firstName:'Alex',
-        lastName:'Jones',
+        firstName:'Luther',
+        lastName:'Campbell',
+        age:21,
+        drinkPackage:true
+      }
+    },
+    {
+      id:2,
+      title:'Bar Mitzvah',
+      date:new Date(),
+      location: 'Manhattan, New York',
+      description:'string',
+      guest: {
+        firstName:'Drake',
+        lastName:'Aubrey',
         age:21,
         drinkPackage:true
       }
