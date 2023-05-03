@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { EventDetailComponent } from 'src/event-detail/event-detail.component';
-import { EventListComponent } from 'src/event-list/event-list.component';
+import { EventDetailComponent } from '../event-detail/event-detail.component';
+import { EventListComponent } from '../event-list/event-list.component';
 
 @Component({
   selector: 'app-root',
